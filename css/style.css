@@ -1,0 +1,467 @@
+/* GLOBAL */
+body{
+    font-family: Arial, sans-serif;
+    background:#fff;
+    color:#0f172a;
+    overflow-x:hidden;
+}
+
+.section-title{
+    font-weight:700;
+    margin-bottom:40px;
+    text-align:center;
+    font-size:38px;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    color:white;
+    padding:100px 0;
+}
+
+.badge-box{
+    display:inline-block;
+    padding:8px 18px;
+    background:#facc15;
+    color:black;
+    border-radius:50px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero-features span{
+    display:inline-block;
+    margin:8px;
+    padding:8px 15px;
+    background:rgba(255,255,255,0.15);
+    border-radius:20px;
+}
+
+/* GLASS CARD */
+.glass-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.old-price{
+    text-decoration:line-through;
+    opacity:.7;
+}
+
+.new-price{
+    color:#facc15;
+    font-size:42px;
+    font-weight:700;
+}
+
+.countdown{
+    font-size:28px;
+    font-weight:bold;
+    margin:20px 0;
+    color:#facc15;
+}
+
+/* COURSE FEE CARD */
+.course-fee-card{
+    overflow:hidden;
+}
+
+.course-banner img{
+    width:100%;
+    border-radius:15px;
+}
+
+.course-features{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.course-features li{
+    padding:10px 0;
+    color:white;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* GENERAL CARDS */
+.feature-card,
+.faculty-card,
+.bonus-card{
+    padding:25px;
+    background:white;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover,
+.faculty-card:hover,
+.bonus-card:hover{
+    transform:translateY(-8px);
+}
+
+.faculty-card img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* ROADMAP SECTION */
+.roadmap-card{
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    height:100%;
+    transition:.3s;
+    position:relative;
+}
+
+.roadmap-card:hover{
+    transform:translateY(-8px);
+}
+
+.roadmap-number{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#1d4ed8,#0f172a);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.roadmap-card h4{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+/* COMPARISON SECTION */
+.comparison-section{
+    background:linear-gradient(180deg,#ffffff,#f1f5f9);
+}
+
+.comparison-wrapper{
+    display:grid;
+    grid-template-columns:1fr 120px 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.comparison-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    min-height:500px;
+    position:relative;
+}
+
+.basic-plan{
+    border-top:6px solid #cbd5e1;
+}
+
+.premium-plan{
+    border-top:6px solid #facc15;
+    background:linear-gradient(180deg,#ffffff,#fffbeb);
+}
+
+.plan-header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.plan-header h3{
+    font-size:24px;
+    font-weight:700;
+}
+
+.plan-header span{
+    color:#64748b;
+}
+
+.comparison-list{
+    list-style:none;
+    padding:0;
+}
+
+.comparison-list li{
+    padding:16px 0;
+    border-bottom:1px dashed #dbeafe;
+    font-weight:500;
+}
+
+.vs-badge{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    box-shadow:0 15px 40px rgba(29,78,216,.25);
+}
+
+.recommended-badge{
+    position:absolute;
+    top:-15px;
+    right:20px;
+    background:#facc15;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.plan-footer{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* REVIEWS SECTION */
+.reviews-section{
+    background:linear-gradient(180deg,#f8fafc,#ffffff);
+}
+
+.review-card{
+    background:#ffffff;
+    border-radius:24px;
+    padding:30px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 25px 50px rgba(0,0,0,.08);
+    height:100%;
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-8px);
+}
+
+.review-card::before{
+    content:"“";
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:80px;
+    color:#e2e8f0;
+    font-weight:bold;
+}
+
+.featured-review{
+    border:2px solid #facc15;
+}
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.review-top img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:4px solid #facc15;
+    object-fit:cover;
+}
+
+.review-rating{
+    color:#f59e0b;
+    font-size:20px;
+    margin:15px 0;
+}
+
+.review-tag{
+    display:inline-block;
+    background:#1d4ed8;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.video-thumbnail{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.video-thumbnail img{
+    width:100%;
+    border-radius:15px;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70px;
+    height:70px;
+    background:rgba(255,255,255,.85);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+.review-stats{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat-box{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    color:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+/* FAQ */
+.accordion-item{
+    border:none;
+    margin-bottom:15px;
+    border-radius:15px !important;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.accordion-button{
+    font-weight:600;
+    padding:20px;
+}
+
+/* PRICING */
+.pricing{
+    background:#0f172a;
+    color:white;
+    padding:80px 0;
+}
+
+/* STICKY BUTTONS */
+.sticky-cta{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+}
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    font-size:28px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    z-index:999;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .hero h1{
+        font-size:38px;
+    }
+
+    .comparison-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .vs-badge{
+        margin:auto;
+    }
+
+    .review-stats{
+        grid-template-columns:1fr;
+    }
+}
+
+.trust-section{
+    margin-top:-50px;
+    position:relative;
+    z-index:2;
+}
+
+.trust-wrapper{
+    background:#f8fafc;
+    border-radius:30px;
+    padding:35px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    flex-wrap:wrap;
+}
+
+.trust-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex:1;
+    min-width:220px;
+}
+
+.trust-icon{
+    width:75px;
+    height:75px;
+    background:#facc15;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    flex-shrink:0;
+}
+
+.trust-content h3{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:5px;
+    color:#0f172a;
+}
+
+.trust-content p{
+    margin:0;
+    color:#475569;
+    font-size:18px;
+    line-height:1.4;
+}
+
+@media(max-width:992px){
+    .trust-wrapper{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .trust-item{
+        width:100%;
+    }
+}
